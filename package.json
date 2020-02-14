@@ -1,0 +1,25 @@
+{
+  "name": "simplesql",
+  "version": "1.0.0",
+  "description": "SimpleSql provides a simple and intuitive wrapper for MySQL queries that mirrors SQL syntax. For example, SELECT ID, NAME FROM USERS WHERE ID = 5 would be expressed as simpleSql.select({\"ID\", \"NAME\"}).from(\"USERS\").where(\"ID = 5\");",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luke-Robinett/SimpleSql.git"
+  },
+  "author": "Luke Robinett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luke-Robinett/SimpleSql/issues"
+  },
+  "homepage": "https://github.com/Luke-Robinett/SimpleSql#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
