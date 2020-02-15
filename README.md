@@ -1,8 +1,8 @@
-# SimpleSql
+# Super Simple SQL
 ## Version 1.0.0
 
 
-SimpleSql provides a simple and intuitive wrapper for MySQL queries that mirrors SQL syntax.
+Super Simple SQL (SSS) provides a simple and intuitive wrapper for MySQL queries that mirrors SQL syntax.
 
 
 ## Example
@@ -16,11 +16,11 @@ WHERE ID = 2;
 ```
 
 
-### Writing it in SimpleSql
+### Writing it in SSS
 
 ```
 // Import the library
-const { Select } = require("./lib/simpleSql");
+const { Select } = require("./lib/sss");
 
 // Instantiate a new Select object
 const select = new Select();
@@ -42,7 +42,7 @@ select
 
 ## Installation
 
-Simply copy the simpleSql.js file into your project and require it into your script files as needed.
+Simply copy the sss.js file into your project and require it into your script files as needed.
 
 
 ## Usage
@@ -53,14 +53,14 @@ You can import the entire library into your Node script or just the classes you 
 ### Importing the entire library:
 
 ```
-const simpleSql = require("./simpleSql");  // Add path as needed
+const sss = require("./sss");  // Add path as needed
 ```
 
 
 ### Importing just the classes you need:
 
 ```
-const { Select, Insert } = require("./simpleSql.js");
+const { Select, Insert } = require("./sss");
 ```
 
 
@@ -70,13 +70,13 @@ const { Select, Insert } = require("./simpleSql.js");
 const select = new Select();
 
 // Or if you imported the whole library,
-const select = new simpleSql.Select();
+const select = new sss.Select();
 ```
 
 
 ### Intuitive Function Chaining
 
-The beauty of using SimpleSql is it's familiar, intuitive chaining syntax:
+The beauty of using SSS is it's familiar, intuitive chaining syntax:
 
 ```
 // Perform a select query
