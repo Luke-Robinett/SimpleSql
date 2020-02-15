@@ -44,9 +44,17 @@ This repository contains a full working example of an app using the SSS library.
 
 ## Installation
 
-Copy the sss.js file into your project and require it into your script files as needed.
+For easiest results, just copy the file structure found in this project's repo. If you want to do it by hand, follow these instructions:
 
-Note: the sss.js library file expects to be in a subfolder one level above your project's root directory. For example, /lib/sss.js. If you want to put it at another level in your directory structure, you'll need to edit the sss.js file and adjust the relative path specified in the require("../config/connection") command at the top of the file. You can name connection.js whatever you want as long as you're consistent with its naming and location relative to this require statement.
+1. Create a folder in your project's root directory called "lib" or whatever name you prefer.
+2. Copy the sss.js library file into this folder
+3. Create another folder in your project's root directory called config
+4. Create a file called connection.js in the config folder
+5. In connection.js, import the MySQL module
+6. In connection.js, declare a variable called "connection" and assign it to mysql.createConnection(), passing all the required parameters for your MySQL database instance
+7. In connection.js, call connection.connect() to start your MySQL instance.
+
+Now you're ready to use SSS! Just require lib/sss in any of your Node scripts where you need the library.
 
 
 ## Requirements
