@@ -39,10 +39,20 @@ select
  });
 ```
 
+This repository contains a full working example of an app using the SSS library.
+
 
 ## Installation
 
-Simply copy the sss.js file into your project and require it into your script files as needed.
+Copy the sss.js file into your project and require it into your script files as needed.
+
+Note: the sss.js library file expects to be in a subfolder one level above your project's root directory. For example, /lib/sss.js. If you want to put it at another level in your directory structure, you'll need to edit the sss.js file and adjust the relative path specified in the require("../config/connection") command at the top of the file. You can name connection.js whatever you want as long as you're consistent with its naming and location relative to this require statement.
+
+
+## Requirements
+
+* mysql NPM module is installed in the project
+* a /config/connection.js file exists with the usual configuration and connecting to your MySQL database. See the example available in this repo.
 
 
 ## Usage
