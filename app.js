@@ -1,4 +1,4 @@
-const { Select } = require("./lib/simpleSql");
+const { Select } = require("./lib/sss");
 
 const select = new Select();
 
