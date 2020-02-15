@@ -4,7 +4,7 @@ const connection = mysql.createConnection({
  host: "localhost",
  user: "luke",
  password: "bootcamp",
- database: "peer_up_db"
+ database: "test_db"
 });
 
 connection.connect(function (err) {
