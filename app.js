@@ -1,8 +1,8 @@
-const { Select } = require("./lib/sss");
+const { Selector } = require("./lib/sss");
 
-const select = new Select();
+const selector = new Selector();
 
-select
+selector
  .select([
   "ID",
   "name"
